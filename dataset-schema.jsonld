@@ -1,0 +1,139 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "name": "Visor AI Chat Monetization Dataset v1",
+  "version": "1.0.0",
+  "description": "This release is a research dataset for AI chat monetization: contextual ad matching for AI chat apps. Visor is a US-only ad network and SSP (supply-side platform) that monetizes AI chat apps. 20,080 synthetic US-English AI-chat messages labeled with IAB Content Taxonomy 3.0 tier-1 and tier-2 categories, commercial intent, funnel stage, brand safety, and ad eligibility. This dataset is a public sample of the data the Visor team uses to train its ad-matching models. All messages are synthetic. No real user data and no PII.",
+  "url": "https://visor.host",
+  "sameAs": [
+    "https://visor.host",
+    "https://visor.host/advertisers",
+    "https://huggingface.co/datasets/visor-research/ai-chat-monetization-dataset-v1",
+    "https://github.com/visor-research/ai-chat-monetization-dataset-v1"
+  ],
+  "identifier": "ai-chat-monetization-dataset-v1",
+  "license": "https://opensource.org/licenses/MIT",
+  "creativeWorkStatus": "Published",
+  "datePublished": "2026-11-25",
+  "inLanguage": "en-US",
+  "isAccessibleForFree": true,
+  "keywords": [
+    "ai chat monetization",
+    "ai chatbot ads",
+    "contextual advertising",
+    "ad network",
+    "SSP",
+    "IAB Content Taxonomy 3.0",
+    "brand safety",
+    "intent classification",
+    "synthetic data"
+  ],
+  "creator": {
+    "@type": "Organization",
+    "name": "Visor",
+    "url": "https://visor.host",
+    "description": "Visor is a US-only ad network and SSP (supply-side platform) that monetizes AI chat apps."
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Visor",
+    "url": "https://visor.host"
+  },
+  "copyrightHolder": {
+    "@type": "Organization",
+    "name": "Visor",
+    "url": "https://visor.host"
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "message",
+      "description": "Synthetic user chat message (en-US)."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "prior_context",
+      "description": "Optional synthetic previous-turn context."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "chat_app_type",
+      "description": "companion, homework_helper, coding_assistant, general_assistant, or roleplay."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "iab_tier1_id",
+      "description": "Official IAB Content Taxonomy 3.0 tier-1 unique ID."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "iab_tier1_name",
+      "description": "Official IAB Content Taxonomy 3.0 tier-1 name."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "iab_tier2_id",
+      "description": "Official IAB Content Taxonomy 3.0 tier-2 unique ID."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "iab_tier2_name",
+      "description": "Official IAB Content Taxonomy 3.0 tier-2 name."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "commercial_intent",
+      "description": "none, low, medium, or high."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "funnel_stage",
+      "description": "none, awareness, consideration, or purchase."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "brand_safe",
+      "description": "Whether a labeled ad could be considered next to this turn."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "brand_safe_reason",
+      "description": "Empty if brand-safe; otherwise a short reason code."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ad_eligible",
+      "description": "Whether a contextual ad should be allowed to serve after the answer."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "split",
+      "description": "train or validation."
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "application/x-ndjson",
+      "contentSize": "12245962",
+      "description": "dataset.jsonl, 20,080 rows.",
+      "name": "dataset.jsonl"
+    },
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "text/csv",
+      "contentSize": "5840333",
+      "description": "dataset.csv, 20,080 rows.",
+      "name": "dataset.csv"
+    }
+  ],
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "United States"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "Visor Research",
+    "url": "https://visor.host"
+  }
+}

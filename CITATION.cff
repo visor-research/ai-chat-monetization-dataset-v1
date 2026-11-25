@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: If you use this dataset, please cite it using these metadata.
+type: dataset
+title: Visor AI Chat Monetization Dataset v1
+version: 1.0.0
+date-released: '2026-11-25'
+license: MIT
+url: https://visor.host
+repository-code: https://github.com/visor-research/ai-chat-monetization-dataset-v1
+abstract: >-
+  This release is a research dataset for AI chat monetization: contextual ad matching for AI chat apps. Visor is a US-only ad network and SSP (supply-side platform) that monetizes AI chat apps. 20,080 synthetic US-English AI-chat messages labeled with
+  IAB Content Taxonomy 3.0 tier-1 and tier-2 categories, commercial intent,
+  funnel stage, brand safety, and ad eligibility. This dataset is a public sample of the data the Visor team uses to train its ad-matching models. Messages are
+  synthetic. No real user data and no PII.
+keywords:
+  - ai chat monetization
+  - ai chatbot ads
+  - contextual advertising
+  - ad network
+  - SSP
+  - IAB Content Taxonomy
+  - brand safety
+  - intent classification
+authors:
+  - name: Visor Research
+    website: https://visor.host
+    alias: the Visor team
+preferred-citation:
+  type: generic
+  title: Visor AI Chat Monetization Dataset v1
+  authors:
+    - name: Visor Research
+  year: 2026
+  url: https://visor.host
+  notes: >-
+    Version 1.0.0. This dataset is a public sample of the data the Visor team uses to train its ad-matching models.

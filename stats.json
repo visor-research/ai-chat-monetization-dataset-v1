@@ -1,0 +1,629 @@
+{
+  "dataset": "ai-chat-monetization-dataset-v1",
+  "dataset_version": "1.0.0",
+  "row_count": 20080,
+  "split_counts": {
+    "train": 18072,
+    "validation": 2008
+  },
+  "ad_eligible": {
+    "true": 16324,
+    "false": 3756,
+    "true_pct": 81.29
+  },
+  "brand_safe": {
+    "true": 19965,
+    "false": 115,
+    "true_pct": 99.43
+  },
+  "brand_safe_reasons": {
+    "illegal drugs": 35,
+    "self-harm": 17,
+    "hate": 13,
+    "medical crisis": 11,
+    "crime": 19,
+    "adult": 13,
+    "minors": 7
+  },
+  "commercial_intent": {
+    "none": 3756,
+    "high": 4872,
+    "low": 3117,
+    "medium": 8335
+  },
+  "funnel_stage": {
+    "none": 3756,
+    "consideration": 10846,
+    "awareness": 3198,
+    "purchase": 2280
+  },
+  "chat_app_type": {
+    "homework_helper": 1366,
+    "general_assistant": 15804,
+    "companion": 1912,
+    "coding_assistant": 845,
+    "roleplay": 153
+  },
+  "message_chars": {
+    "min": 41,
+    "max": 227,
+    "mean": 110.4,
+    "median": 107.0
+  },
+  "message_words": {
+    "min": 7,
+    "max": 49,
+    "mean": 21.1,
+    "median": 20.0
+  },
+  "with_prior_context": {
+    "count": 6904,
+    "pct": 34.38
+  },
+  "categories": [
+    {
+      "iab_tier1_name": "Education",
+      "iab_tier2_name": "Homework and Study",
+      "iab_tier2_id": "146",
+      "count": 1407,
+      "pct": 7.01
+    },
+    {
+      "iab_tier1_name": "Technology & Computing",
+      "iab_tier2_name": "Computing",
+      "iab_tier2_id": "599",
+      "count": 1201,
+      "pct": 5.98
+    },
+    {
+      "iab_tier1_name": "Family and Relationships",
+      "iab_tier2_name": "Single Life",
+      "iab_tier2_id": "200",
+      "count": 1000,
+      "pct": 4.98
+    },
+    {
+      "iab_tier1_name": "Medical Health",
+      "iab_tier2_name": "Diseases and Conditions",
+      "iab_tier2_id": "287",
+      "count": 423,
+      "pct": 2.11
+    },
+    {
+      "iab_tier1_name": "Family and Relationships",
+      "iab_tier2_name": "Parenting",
+      "iab_tier2_id": "192",
+      "count": 384,
+      "pct": 1.91
+    },
+    {
+      "iab_tier1_name": "Family and Relationships",
+      "iab_tier2_name": "Dating",
+      "iab_tier2_id": "188",
+      "count": 280,
+      "pct": 1.39
+    },
+    {
+      "iab_tier1_name": "Food & Drink",
+      "iab_tier2_name": "Dining Out",
+      "iab_tier2_id": "218",
+      "count": 280,
+      "pct": 1.39
+    },
+    {
+      "iab_tier1_name": "Entertainment",
+      "iab_tier2_name": "Movies",
+      "iab_tier2_id": "324",
+      "count": 280,
+      "pct": 1.39
+    },
+    {
+      "iab_tier1_name": "Home & Garden",
+      "iab_tier2_name": "Home Appliances",
+      "iab_tier2_id": "278",
+      "count": 279,
+      "pct": 1.39
+    },
+    {
+      "iab_tier1_name": "Home & Garden",
+      "iab_tier2_name": "Home Improvement",
+      "iab_tier2_id": "280",
+      "count": 279,
+      "pct": 1.39
+    },
+    {
+      "iab_tier1_name": "Travel",
+      "iab_tier2_name": "Travel Locations",
+      "iab_tier2_id": "655",
+      "count": 279,
+      "pct": 1.39
+    },
+    {
+      "iab_tier1_name": "Automotive",
+      "iab_tier2_name": "Auto Buying and Selling",
+      "iab_tier2_id": "30",
+      "count": 278,
+      "pct": 1.38
+    },
+    {
+      "iab_tier1_name": "Technology & Computing",
+      "iab_tier2_name": "Consumer Electronics",
+      "iab_tier2_id": "632",
+      "count": 278,
+      "pct": 1.38
+    },
+    {
+      "iab_tier1_name": "Shopping",
+      "iab_tier2_name": "Grocery Shopping",
+      "iab_tier2_id": "477",
+      "count": 278,
+      "pct": 1.38
+    },
+    {
+      "iab_tier1_name": "Attractions",
+      "iab_tier2_name": "Outdoor Activities",
+      "iab_tier2_id": "159",
+      "count": 278,
+      "pct": 1.38
+    },
+    {
+      "iab_tier1_name": "Style & Fashion",
+      "iab_tier2_name": "Women's Fashion",
+      "iab_tier2_id": "560",
+      "count": 278,
+      "pct": 1.38
+    },
+    {
+      "iab_tier1_name": "Travel",
+      "iab_tier2_name": "Travel Preparation and Advice",
+      "iab_tier2_id": "663",
+      "count": 277,
+      "pct": 1.38
+    },
+    {
+      "iab_tier1_name": "Food & Drink",
+      "iab_tier2_name": "Healthy Cooking and Eating",
+      "iab_tier2_id": "221",
+      "count": 276,
+      "pct": 1.37
+    },
+    {
+      "iab_tier1_name": "Pets",
+      "iab_tier2_name": "Pet Supplies",
+      "iab_tier2_id": "431",
+      "count": 276,
+      "pct": 1.37
+    },
+    {
+      "iab_tier1_name": "Home & Garden",
+      "iab_tier2_name": "Gardening",
+      "iab_tier2_id": "275",
+      "count": 275,
+      "pct": 1.37
+    },
+    {
+      "iab_tier1_name": "Shopping",
+      "iab_tier2_name": "Holiday Shopping",
+      "iab_tier2_id": "478",
+      "count": 275,
+      "pct": 1.37
+    },
+    {
+      "iab_tier1_name": "Personal Celebrations & Life Events",
+      "iab_tier2_name": "Birthday",
+      "iab_tier2_id": "170",
+      "count": 274,
+      "pct": 1.36
+    },
+    {
+      "iab_tier1_name": "Home & Garden",
+      "iab_tier2_name": "Smart Home",
+      "iab_tier2_id": "277",
+      "count": 274,
+      "pct": 1.36
+    },
+    {
+      "iab_tier1_name": "Personal Finance",
+      "iab_tier2_name": "Personal Investing",
+      "iab_tier2_id": "410",
+      "count": 273,
+      "pct": 1.36
+    },
+    {
+      "iab_tier1_name": "Attractions",
+      "iab_tier2_name": "Amusement and Theme Parks",
+      "iab_tier2_id": "151",
+      "count": 270,
+      "pct": 1.34
+    },
+    {
+      "iab_tier1_name": "Technology & Computing",
+      "iab_tier2_name": "Artificial Intelligence",
+      "iab_tier2_id": "597",
+      "count": 270,
+      "pct": 1.34
+    },
+    {
+      "iab_tier1_name": "Hobbies & Interests",
+      "iab_tier2_name": "Arts and Crafts",
+      "iab_tier2_id": "248",
+      "count": 270,
+      "pct": 1.34
+    },
+    {
+      "iab_tier1_name": "Automotive",
+      "iab_tier2_name": "Auto Insurance",
+      "iab_tier2_id": "31",
+      "count": 270,
+      "pct": 1.34
+    },
+    {
+      "iab_tier1_name": "Automotive",
+      "iab_tier2_name": "Auto Repair",
+      "iab_tier2_id": "34",
+      "count": 270,
+      "pct": 1.34
+    },
+    {
+      "iab_tier1_name": "Attractions",
+      "iab_tier2_name": "Bars & Restaurants",
+      "iab_tier2_id": "179",
+      "count": 270,
+      "pct": 1.34
+    },
+    {
+      "iab_tier1_name": "Style & Fashion",
+      "iab_tier2_name": "Beauty",
+      "iab_tier2_id": "553",
+      "count": 270,
+      "pct": 1.34
+    },
+    {
+      "iab_tier1_name": "Business and Finance",
+      "iab_tier2_name": "Business",
+      "iab_tier2_id": "53",
+      "count": 270,
+      "pct": 1.34
+    },
+    {
+      "iab_tier1_name": "Video Gaming",
+      "iab_tier2_name": "Console Games",
+      "iab_tier2_id": "681",
+      "count": 270,
+      "pct": 1.34
+    },
+    {
+      "iab_tier1_name": "Personal Finance",
+      "iab_tier2_name": "Consumer Banking",
+      "iab_tier2_id": "392",
+      "count": 270,
+      "pct": 1.34
+    },
+    {
+      "iab_tier1_name": "Food & Drink",
+      "iab_tier2_name": "Cooking",
+      "iab_tier2_id": "216",
+      "count": 270,
+      "pct": 1.34
+    },
+    {
+      "iab_tier1_name": "Shopping",
+      "iab_tier2_name": "Coupons and Discounts",
+      "iab_tier2_id": "474",
+      "count": 270,
+      "pct": 1.34
+    },
+    {
+      "iab_tier1_name": "Pets",
+      "iab_tier2_name": "Dogs",
+      "iab_tier2_id": "425",
+      "count": 270,
+      "pct": 1.34
+    },
+    {
+      "iab_tier1_name": "Style & Fashion",
+      "iab_tier2_name": "Fashion Trends",
+      "iab_tier2_id": "577",
+      "count": 270,
+      "pct": 1.34
+    },
+    {
+      "iab_tier1_name": "Healthy Living",
+      "iab_tier2_name": "Fitness and Exercise",
+      "iab_tier2_id": "225",
+      "count": 270,
+      "pct": 1.34
+    },
+    {
+      "iab_tier1_name": "Personal Finance",
+      "iab_tier2_name": "Insurance",
+      "iab_tier2_id": "398",
+      "count": 270,
+      "pct": 1.34
+    },
+    {
+      "iab_tier1_name": "Careers",
+      "iab_tier2_name": "Job Search",
+      "iab_tier2_id": "127",
+      "count": 270,
+      "pct": 1.34
+    },
+    {
+      "iab_tier1_name": "Education",
+      "iab_tier2_name": "Language Learning",
+      "iab_tier2_id": "147",
+      "count": 270,
+      "pct": 1.34
+    },
+    {
+      "iab_tier1_name": "Entertainment",
+      "iab_tier2_name": "Music",
+      "iab_tier2_id": "338",
+      "count": 270,
+      "pct": 1.34
+    },
+    {
+      "iab_tier1_name": "Healthy Living",
+      "iab_tier2_name": "Nutrition",
+      "iab_tier2_id": "229",
+      "count": 270,
+      "pct": 1.34
+    },
+    {
+      "iab_tier1_name": "Education",
+      "iab_tier2_name": "Online Education",
+      "iab_tier2_id": "148",
+      "count": 270,
+      "pct": 1.34
+    },
+    {
+      "iab_tier1_name": "Video Gaming",
+      "iab_tier2_name": "PC Games",
+      "iab_tier2_id": "684",
+      "count": 270,
+      "pct": 1.34
+    },
+    {
+      "iab_tier1_name": "Personal Finance",
+      "iab_tier2_name": "Personal Debt",
+      "iab_tier2_id": "405",
+      "count": 270,
+      "pct": 1.34
+    },
+    {
+      "iab_tier1_name": "Personal Finance",
+      "iab_tier2_name": "Personal Taxes",
+      "iab_tier2_id": "415",
+      "count": 270,
+      "pct": 1.34
+    },
+    {
+      "iab_tier1_name": "Real Estate",
+      "iab_tier2_name": "Real Estate Buying and Selling",
+      "iab_tier2_id": "451",
+      "count": 270,
+      "pct": 1.34
+    },
+    {
+      "iab_tier1_name": "Real Estate",
+      "iab_tier2_name": "Real Estate Renting and Leasing",
+      "iab_tier2_id": "452",
+      "count": 270,
+      "pct": 1.34
+    },
+    {
+      "iab_tier1_name": "Personal Finance",
+      "iab_tier2_name": "Retirement Planning",
+      "iab_tier2_id": "416",
+      "count": 270,
+      "pct": 1.34
+    },
+    {
+      "iab_tier1_name": "Sports",
+      "iab_tier2_name": "Sports Equipment",
+      "iab_tier2_id": "551",
+      "count": 270,
+      "pct": 1.34
+    },
+    {
+      "iab_tier1_name": "Travel",
+      "iab_tier2_name": "Travel Type",
+      "iab_tier2_id": "664",
+      "count": 270,
+      "pct": 1.34
+    },
+    {
+      "iab_tier1_name": "Personal Celebrations & Life Events",
+      "iab_tier2_name": "Wedding",
+      "iab_tier2_id": "165",
+      "count": 270,
+      "pct": 1.34
+    },
+    {
+      "iab_tier1_name": "Education",
+      "iab_tier2_name": "College Education",
+      "iab_tier2_id": "137",
+      "count": 247,
+      "pct": 1.23
+    },
+    {
+      "iab_tier1_name": "Books and Literature",
+      "iab_tier2_name": "Fiction",
+      "iab_tier2_id": "48",
+      "count": 208,
+      "pct": 1.04
+    },
+    {
+      "iab_tier1_name": "Entertainment",
+      "iab_tier2_name": "Television",
+      "iab_tier2_id": "640",
+      "count": 205,
+      "pct": 1.02
+    },
+    {
+      "iab_tier1_name": "Careers",
+      "iab_tier2_name": "Career Advice",
+      "iab_tier2_id": "125",
+      "count": 203,
+      "pct": 1.01
+    },
+    {
+      "iab_tier1_name": "Hobbies & Interests",
+      "iab_tier2_name": "Games and Puzzles",
+      "iab_tier2_id": "269",
+      "count": 198,
+      "pct": 0.99
+    },
+    {
+      "iab_tier1_name": "Sports",
+      "iab_tier2_name": "American Football",
+      "iab_tier2_id": "484",
+      "count": 189,
+      "pct": 0.94
+    },
+    {
+      "iab_tier1_name": "Video Gaming",
+      "iab_tier2_name": "Mobile Games",
+      "iab_tier2_id": "683",
+      "count": 189,
+      "pct": 0.94
+    },
+    {
+      "iab_tier1_name": "Careers",
+      "iab_tier2_name": "Remote Working",
+      "iab_tier2_id": "130",
+      "count": 189,
+      "pct": 0.94
+    },
+    {
+      "iab_tier1_name": "Healthy Living",
+      "iab_tier2_name": "Weight Loss",
+      "iab_tier2_id": "231",
+      "count": 189,
+      "pct": 0.94
+    },
+    {
+      "iab_tier1_name": "Healthy Living",
+      "iab_tier2_name": "Wellness",
+      "iab_tier2_id": "232",
+      "count": 189,
+      "pct": 0.94
+    },
+    {
+      "iab_tier1_name": "Sports",
+      "iab_tier2_name": "Basketball",
+      "iab_tier2_id": "547",
+      "count": 188,
+      "pct": 0.94
+    },
+    {
+      "iab_tier1_name": "Sensitive Topics",
+      "iab_tier2_name": "Illegal Drugs, Tobacco, eCigarettes, Vaping, Alcohol",
+      "iab_tier2_id": "pg0WhF",
+      "count": 40,
+      "pct": 0.2
+    },
+    {
+      "iab_tier1_name": "Sensitive Topics",
+      "iab_tier2_name": "Crime & Harmful Acts to Individuals, Society & Human Right Violations",
+      "iab_tier2_id": "XtODT3",
+      "count": 21,
+      "pct": 0.1
+    },
+    {
+      "iab_tier1_name": "Sensitive Topics",
+      "iab_tier2_name": "Death, Injury, or Military Conflict",
+      "iab_tier2_id": "I4GWl6",
+      "count": 17,
+      "pct": 0.08
+    },
+    {
+      "iab_tier1_name": "Sensitive Topics",
+      "iab_tier2_name": "Adult & Explicit Sexual Content",
+      "iab_tier2_id": "Rm3SiT",
+      "count": 13,
+      "pct": 0.06
+    },
+    {
+      "iab_tier1_name": "Sensitive Topics",
+      "iab_tier2_name": "Hate Speech and Acts of Aggression",
+      "iab_tier2_id": "HxqYV1",
+      "count": 13,
+      "pct": 0.06
+    }
+  ],
+  "category_keys": {
+    "homework": 1407,
+    "computing": 1201,
+    "single_life_vents": 1000,
+    "medical_conditions": 423,
+    "parenting": 384,
+    "dating": 280,
+    "dining_out": 280,
+    "movies": 280,
+    "home_appliances": 279,
+    "home_improvement": 279,
+    "travel_locations": 279,
+    "auto_buying": 278,
+    "consumer_electronics": 278,
+    "grocery": 278,
+    "outdoor_activities": 278,
+    "womens_fashion": 278,
+    "travel_prep": 277,
+    "healthy_cooking": 276,
+    "pet_supplies": 276,
+    "gardening": 275,
+    "holiday_shopping": 275,
+    "birthday": 274,
+    "smart_home": 274,
+    "investing": 273,
+    "artificial_intelligence": 270,
+    "arts_crafts": 270,
+    "auto_insurance": 270,
+    "auto_repair": 270,
+    "banking": 270,
+    "bars_restaurants": 270,
+    "beauty": 270,
+    "business": 270,
+    "buying_home": 270,
+    "console_games": 270,
+    "cooking": 270,
+    "coupons": 270,
+    "debt": 270,
+    "dogs": 270,
+    "fashion_trends": 270,
+    "fitness": 270,
+    "insurance": 270,
+    "job_search": 270,
+    "language_learning": 270,
+    "music": 270,
+    "nutrition": 270,
+    "online_education": 270,
+    "pc_games": 270,
+    "personal_taxes": 270,
+    "renting": 270,
+    "retirement": 270,
+    "sports_equipment": 270,
+    "theme_parks": 270,
+    "travel_type": 270,
+    "wedding": 270,
+    "college_education": 247,
+    "fiction": 208,
+    "television": 205,
+    "career_advice": 203,
+    "games_puzzles": 198,
+    "american_football": 189,
+    "mobile_games": 189,
+    "remote_working": 189,
+    "weight_loss": 189,
+    "wellness": 189,
+    "basketball": 188,
+    "sensitive_drugs": 40,
+    "sensitive_crime": 21,
+    "sensitive_death_injury": 17,
+    "sensitive_adult": 13,
+    "sensitive_hate": 13
+  },
+  "unique_tier2_labels": 70,
+  "unique_messages": 20080
+}
